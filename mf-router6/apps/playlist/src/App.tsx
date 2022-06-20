@@ -1,7 +1,7 @@
 import { AppShell } from 'ui';
 
-import { Playlist } from './components/Playlist'
 import { MoviesContent } from  "movies-content";
+import { Playlist } from 'playlist-content'
 
 function App() {
   return (

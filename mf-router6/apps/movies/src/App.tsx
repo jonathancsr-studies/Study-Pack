@@ -1,6 +1,7 @@
 import { AppShell } from 'ui';
 
 import { MoviesContent } from 'movies-content'
+import { Playlist } from 'playlist-content'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         },
         {
           path: "/playlist",
-          element: () => <div>Playlisttsss!!</div>
+          element: Playlist,
         }
       ]}
       navLinks={[
