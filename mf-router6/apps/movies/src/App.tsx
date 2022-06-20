@@ -1,6 +1,6 @@
 import { AppShell } from 'ui';
 
-import MoviesContent from './components/MoviesContent'
+import { MoviesContent } from 'movies-content'
 
 function App() {
   return (
