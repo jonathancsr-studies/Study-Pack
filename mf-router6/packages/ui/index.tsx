@@ -1,6 +1,8 @@
 import * as React from "react";
-import { AppShell as MantineAppShell, Group, Header, MantineProvider, Navbar, Text, UnstyledButton} from '@mantine/core';
+import { AppShell as MantineAppShell, Group, Header, MantineProvider, Navbar, Text, Title, UnstyledButton} from '@mantine/core';
 import { BrowserRouter, Outlet, Link, Routes, Route } from "react-router-dom"
+import { useStore } from 'store';
+
 
 export type Route = {
     element: React.FunctionComponent;
@@ -41,7 +43,7 @@ export const AppShell: React.FunctionComponent<{
     navLinks: NavLink[];
     colorScheme?: 'light' | 'dark';
 }> = ({title, colorScheme, routes, navLinks}) => {
-
+    const {movies} = useStore();
     return (
         <BrowserRouter>
             <MantineProvider
@@ -74,7 +76,8 @@ export const AppShell: React.FunctionComponent<{
                                 }
                             })}
                         >
-                            {title}
+                         <Title sx={{ flexGrow: 1}}>{title}</Title>   
+                         <Text size="xl">{movies.length} selected</Text>
                         </Header>
                     }
                 

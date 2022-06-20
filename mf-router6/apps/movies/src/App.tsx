@@ -1,5 +1,7 @@
 import { AppShell } from 'ui';
 
+import MoviesContent from './components/MoviesContent'
+
 function App() {
   return (
     <AppShell 
@@ -7,7 +9,7 @@ function App() {
       routes={[
         {
           path: "/",
-          element: () => <div>Home</div>
+          element:  MoviesContent,
         },
         {
           path: "/playlist",

@@ -9,11 +9,13 @@ importers:
       turbo: latest
     devDependencies:
       eslint-config-custom: link:packages/eslint-config-custom
-      prettier: 2.7.0
+      prettier: 2.7.1
       turbo: 1.2.16
 
   apps/movies:
     specifiers:
+      '@mantine/core': ^4.2.9
+      '@mantine/hooks': ^4.2.9
       '@testing-library/jest-dom': ^5.16.4
       '@testing-library/react': ^13.3.0
       '@testing-library/user-event': ^13.5.0
@@ -21,6 +23,7 @@ importers:
       '@types/node': ^16.11.39
       '@types/react': ^18.0.12
       '@types/react-dom': ^18.0.5
+      card: workspace:*
       react: ^18.1.0
       react-dom: ^18.1.0
       react-scripts: 5.0.1
@@ -29,6 +32,8 @@ importers:
       ui: workspace:*
       web-vitals: ^2.1.4
     dependencies:
+      '@mantine/core': 4.2.9_gd7jkzjdjnreghvow2btngktzu
+      '@mantine/hooks': 4.2.9_react@18.1.0
       '@testing-library/jest-dom': 5.16.4
       '@testing-library/react': 13.3.0_ef5jwxihqo6n7gxfmzogljlgcm
       '@testing-library/user-event': 13.5.0
@@ -36,6 +41,7 @@ importers:
       '@types/node': 16.11.39
       '@types/react': 18.0.12
       '@types/react-dom': 18.0.5
+      card: link:../../packages/card
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
       react-scripts: 5.0.1_cn5jcockkrembw54osxy7yvfpi
@@ -43,6 +49,33 @@ importers:
       typescript: 4.7.3
       ui: link:../../packages/ui
       web-vitals: 2.1.4
+
+  packages/card:
+    specifiers:
+      '@mantine/core': ^4.2.9
+      '@mantine/hooks': ^4.2.9
+      '@types/react': ^18.0.12
+      '@types/react-dom': ^18.0.5
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      react: ^18.1.0
+      react-dom: ^18.1.0
+      store: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    dependencies:
+      '@mantine/core': 4.2.9_gd7jkzjdjnreghvow2btngktzu
+      '@mantine/hooks': 4.2.9_react@18.1.0
+    devDependencies:
+      '@types/react': 18.0.12
+      '@types/react-dom': 18.0.5
+      eslint: 7.32.0
+      eslint-config-custom: link:../eslint-config-custom
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      store: link:../store
+      tsconfig: link:../tsconfig
+      typescript: 4.7.3
 
   packages/eslint-config-custom:
     specifiers:
@@ -8355,8 +8388,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier/2.7.0:
-    resolution: {integrity: sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true

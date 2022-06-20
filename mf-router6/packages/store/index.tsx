@@ -10,5 +10,5 @@ export const useStore = create<{
     addMovie: (movie: Movie) => void;
 }>((set)=>({
     movies: [],
-    addMovie: (movie)=> set((state) => ({ movies: [...state.movies,movie]}))
+    addMovie: (movie)=> set((state) => ({ movies: [...state.movies,movie]})),
 }));
