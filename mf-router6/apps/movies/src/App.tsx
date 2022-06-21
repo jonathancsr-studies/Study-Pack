@@ -1,7 +1,8 @@
 import { AppShell } from 'ui';
-
 import  MoviesContent from './components/MoviesContent'
-import { Playlist } from 'playlist-content'
+import React, { Suspense } from 'react';
+// @ts-ignore
+const Playlist =  React.lazy(() => import("playlist/Playlist"));
 
 function App() {
   return (
@@ -10,11 +11,17 @@ function App() {
       routes={[
         {
           path: "/",
-          element:  MoviesContent,
+          element:  () => (
+              <MoviesContent/>
+          ),
         },
         {
           path: "/playlist",
-          element: Playlist,
+          element:  () => (
+            <Suspense fallback={null}>
+              <Playlist/>
+            </Suspense>
+          ),
         }
       ]}
       navLinks={[

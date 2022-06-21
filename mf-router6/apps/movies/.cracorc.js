@@ -18,7 +18,7 @@ module.exports = () => ({
                         "./Movies": "./src/components/MoviesContent",
                     },
                     remotes: {
-                        playlist: "playlist@http://localhost:3000/remoteEntry.js",
+                        playlist: "playlist@http://localhost:3001/remoteEntry.js",
                     },
                     shared: {
                         ...deps,

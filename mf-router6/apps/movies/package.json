@@ -13,8 +13,6 @@
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "card": "workspace:*",
-    "movies-content": "workspace:*",
-    "playlist-content": "workspace:*",
     "tsconfig": "workspace:*",
     "ui": "workspace:*",
     "react": "^18.1.0",

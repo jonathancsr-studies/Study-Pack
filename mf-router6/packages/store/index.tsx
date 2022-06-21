@@ -3,6 +3,7 @@ import create from 'zustand'
 export type Movie = {
     title: string;
     image: string;
+    look?: number;
 }
 
 export const useStore = create<{
