@@ -9,7 +9,7 @@ export const Playlist: React.FunctionComponent = () => {
   return (
       <>
         <Box>
-          <Title>Viewing List</Title>
+          <Title>Viewing List 2</Title>
         </Box>
         <Grid
           mt={20}
