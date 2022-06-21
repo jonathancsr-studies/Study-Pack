@@ -18,7 +18,7 @@ export const Playlist: React.FunctionComponent = () => {
           }}
         >
         {movies.map((movie)=>(
-          <MovieCard {...movie} key={movie.title} showAddButton/>
+          <MovieCard {...movie} key={movie.title} showAddButton={false}/>
         ))}
 
         </Grid>
