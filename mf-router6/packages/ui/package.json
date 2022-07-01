@@ -7,9 +7,15 @@
   "scripts": {
     "build": "tsc --outDir dist",
     "dev": "tsc  --watch --outDir dist",
-    "lint": "eslint *.ts*"
+    "lint": "eslint *.ts*",
+    "storybook": "start-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "eslint": "^7.32.0",
