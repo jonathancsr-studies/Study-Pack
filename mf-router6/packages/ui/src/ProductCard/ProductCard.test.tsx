@@ -1,13 +1,12 @@
 import { render } from '@testing-library/react';
-import { AppShell } from '.';
+import { ProductCard } from '.';
 
 
 describe('AppShell', () => {
   it('renders', () => {
-    const { queryAllByAltText } = render(<AppShell 
+    const { queryAllByAltText } = render(<ProductCard 
       title='Foo'
-      navLinks={[]}
-      routes={[{ path: '/', element: () => <div>Hello</div>}]}
+      description='Hello'
     />);
 
     expect(queryAllByAltText('Foo')).toBeTruthy();
