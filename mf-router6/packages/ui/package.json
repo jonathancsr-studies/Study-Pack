@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",

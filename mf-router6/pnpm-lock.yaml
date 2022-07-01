@@ -162,6 +162,7 @@ importers:
     specifiers:
       '@mantine/core': ^4.2.9
       '@mantine/hooks': ^4.2.9
+      '@storybook/addon-docs': ^6.5.9
       '@storybook/addon-essentials': ^6.5.9
       '@storybook/addon-interactions': ^6.5.9
       '@storybook/addon-links': ^6.5.9
@@ -187,6 +188,7 @@ importers:
       '@mantine/hooks': 4.2.9_react@18.1.0
       react-router-dom: 6.3.0_ef5jwxihqo6n7gxfmzogljlgcm
     devDependencies:
+      '@storybook/addon-docs': 6.5.9_z7g7i6x5axhovgbvhvahvopbhe
       '@storybook/addon-essentials': 6.5.9_z7g7i6x5axhovgbvhvahvopbhe
       '@storybook/addon-interactions': 6.5.9_qnwzrpggpeq4eo6675bbpey6qu
       '@storybook/addon-links': 6.5.9_ef5jwxihqo6n7gxfmzogljlgcm
